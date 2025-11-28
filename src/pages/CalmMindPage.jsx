@@ -2,9 +2,9 @@ import React from 'react';
 import '../components/ProjectDetailsPage.css';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import calmmindImage from '../assets/CalmMindImg.png';
+import calmmindImage from '../assets/CalmmindImg.png';
 import calmmindImageTwo from '../assets/CalmMindImg2.png';
-import calmmindImageThree from '../assets/CalmMindImg3.png';
+import calmmindImageThree from '../assets/CalmMindimg3.png';
 
 function CalmMindPage() {
     return (
