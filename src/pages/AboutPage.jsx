@@ -1,5 +1,5 @@
 import './AboutPage.css';
-import aboutImage from '../assets/aboutMePageImg2.jpg';
+import aboutImage from '../assets/AboutMePageImg2.jpg';
 import { FaCode, FaDatabase, FaCloud, FaUsers, FaGraduationCap, FaBriefcase, FaCertificate, FaLightbulb, FaNewspaper, FaExternalLinkAlt } from 'react-icons/fa';
 
 function AboutPage() {
