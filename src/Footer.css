@@ -1,0 +1,108 @@
+footer {
+  background-color: #2b2d42;
+  color: white;
+  padding: 60px 80px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top section with 3 columns */
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+/* Left section */
+.footer-left-top h3 {
+  color: #5eead4;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.job-desc {
+  color: #a8b2d1;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Middle section - Contact */
+.footer-middle-top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;  /* Added this */
+  text-align: center;   /* Added this */
+}
+
+.contact {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.email {
+  color: #5eead4;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.email:hover {
+  opacity: 0.8;
+}
+
+.phone,
+.location {
+  color: #a8b2d1;
+}
+
+/* Right section - Social icons */
+.footer-right-top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer-right-top a {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer-right-top a:hover {
+  color: #5eead4;
+}
+
+/* Bottom copyright section */
+.footer-content {
+  text-align: center;
+  padding: 30px 0 0;
+  border-top: 2px solid #5eead4;
+  margin-top: 30px;
+}
+
+.footer-content p {
+  color: #5eead4;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  footer {
+    padding: 40px 40px 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-right-top {
+    justify-content: flex-start;
+  }
+}

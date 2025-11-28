@@ -1,0 +1,269 @@
+.contact-page {
+  min-height: 100vh;
+  background-color: #2b2d42;
+  padding: 120px 80px 80px;
+  color: white;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-title .highlight {
+  color: #5eead4;
+}
+
+.contact-subtitle {
+  color: #a8b2d1;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Container */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+}
+
+/* Left Side - Contact Info */
+.contact-left h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.connect-description {
+  color: #a8b2d1;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 50px;
+}
+
+.contact-method {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #3d5a6c;
+  padding: 25px;
+  border: 2px solid #e5e7eb;
+}
+
+.contact-method:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
+.contact-method:last-child {
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+}
+
+.contact-method:not(:first-child):not(:last-child) {
+  border-top: none;
+}
+
+.method-icon {
+  font-size: 2rem;
+  color: #5eead4;
+  min-width: 40px;
+}
+
+.method-details h4 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.method-details p,
+.method-details a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.method-details a:hover {
+  color: #5eead4;
+}
+
+/* Social Section */
+.social-section {
+  margin-top: 50px;
+}
+
+.social-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #5eead4;
+}
+
+/* Right Side - Form */
+.contact-right {
+  background-color: #3d5a6c;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.form-header {
+  background-color: #5eead4;
+  padding: 25px 40px;
+}
+
+.form-header h3 {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-form {
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #2b2d42;
+  border: 2px solid #4a5568;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #5eead4;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6b7280;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: #e5e7eb;
+  color: #1a1a1a;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+/* Success Message */
+.success-message {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.success-message h3 {
+  color: #5eead4;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  color: #a8b2d1;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .contact-page {
+    padding: 100px 40px 60px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-form {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .social-icons a {
+    font-size: 2.5rem;
+  }
+}
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}

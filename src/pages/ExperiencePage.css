@@ -1,0 +1,410 @@
+.experience-page {
+    min-height: 100vh;
+    background-color: #2b2d42;
+    color: white;
+    padding: 120px 80px 80px;
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.experience-header-section {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.experience-main-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.experience-main-title .highlight {
+    color: #5eead4;
+}
+
+.experience-subtitle {
+    color: #a8b2d1;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Featured Article Banner */
+.featured-article-banner {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(94, 234, 212, 0.15), rgba(61, 90, 108, 0.15));
+    border: 2px solid #5eead4;
+    border-radius: 20px;
+    padding: 35px 40px;
+    margin-bottom: 80px;
+    transition: transform 0.3s;
+}
+
+.featured-article-banner:hover {
+    transform: translateY(-5px);
+}
+
+.banner-icon {
+    background-color: #5eead4;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 2rem;
+    color: #2b2d42;
+}
+
+.banner-content h3 {
+    color: #5eead4;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.banner-content p {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.banner-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #5eead4;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: gap 0.3s;
+}
+
+.banner-link:hover {
+    gap: 12px;
+}
+
+/* Experience Timeline */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Experience Card */
+.experience-card {
+    background-color: #1a1a2e;
+    border: 2px solid #3d5a6c;
+    border-radius: 20px;
+    padding: 45px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.experience-card:hover {
+    border-color: #5eead4;
+    transform: translateY(-5px);
+}
+
+.experience-card-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.experience-title-group h2 {
+    color: #5eead4;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.company-name {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.experience-date {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.experience-image {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #3d5a6c;
+    height: fit-content;
+}
+
+.experience-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.experience-description h3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.experience-description p {
+    color: #a8b2d1;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+/* Highlights */
+.experience-highlights {
+    margin-bottom: 30px;
+}
+
+.experience-highlights h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.experience-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-highlights ul li {
+    color: #a8b2d1;
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.experience-highlights ul li::before {
+    content: "→";
+    color: #5eead4;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+}
+
+/* Impact Stats */
+.experience-impact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: rgba(94, 234, 212, 0.05);
+    border-radius: 15px;
+    border: 1px solid #3d5a6c;
+}
+
+.impact-item {
+    text-align: center;
+}
+
+.impact-number {
+    display: block;
+    color: #5eead4;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.impact-label {
+    display: block;
+    color: #a8b2d1;
+    font-size: 0.9rem;
+}
+
+/* Tech Tags */
+.experience-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-tag {
+    background-color: transparent;
+    border: 2px solid #5eead4;
+    color: #5eead4;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .experience-page {
+        padding: 100px 40px 60px;
+    }
+
+    .experience-main-title {
+        font-size: 2.5rem;
+    }
+
+    .experience-card {
+        padding: 30px 25px;
+    }
+
+    .experience-card-header {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-article-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 25px;
+    }
+
+    .experience-impact {
+        grid-template-columns: 1fr;
+    }
+}
+/* Tool Showcase Section */
+.tool-showcase {
+    background-color: rgba(94, 234, 212, 0.05);
+    border: 2px solid #3d5a6c;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 30px 0;
+}
+
+.tool-showcase h4 {
+    color: #5eead4;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Main Showcase Image */
+.showcase-main-image {
+    margin-bottom: 40px;
+}
+
+.showcase-main-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #3d5a6c;
+    margin-bottom: 15px;
+}
+
+.image-caption {
+    color: #a8b2d1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.image-caption strong {
+    color: #5eead4;
+}
+
+/* Feature Grid */
+.showcase-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.showcase-feature {
+    background-color: #1a1a2e;
+    border: 2px solid #3d5a6c;
+    border-radius: 12px;
+    padding: 20px;
+    transition: border-color 0.3s;
+}
+
+.showcase-feature:hover {
+    border-color: #5eead4;
+}
+
+.showcase-feature img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.feature-description h5 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.feature-description p {
+    color: #a8b2d1;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Demo Link */
+.demo-link-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #1a1a2e;
+    border-radius: 12px;
+    border: 2px solid #5eead4;
+}
+
+.demo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #5eead4;
+    color: #1a1a2e;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.demo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(94, 234, 212, 0.4);
+}
+
+.demo-note {
+    color: #a8b2d1;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+/* Remove single image header for SYNGAP card */
+.experience-card-header-full {
+    margin-bottom: 30px;
+}
+
+.experience-card-header-full .experience-title-group {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .tool-showcase {
+        padding: 25px 20px;
+    }
+
+    .showcase-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
