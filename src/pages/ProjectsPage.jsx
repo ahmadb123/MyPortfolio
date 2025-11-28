@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectsPage.css';
 import { Link } from 'react-router-dom';
 import gamerhubImage from '../assets/GamerHubImg.png';
-import calmmindImage from '../assets/CalmMindImg.png';
+import calmmindImage from '../assets/CalmmindImg.png';
 // import syngapImage from '../assets/syngap_screenshot.png';
 
 function ProjectsPage() {
