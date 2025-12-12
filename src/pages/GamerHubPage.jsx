@@ -32,6 +32,11 @@ function GamerHubPage() {
                 <div className='project-image-container'>
                     <img src={gamerhubImage} alt="GamerHub Screenshot" className='project-image'/>
                 </div>
+                <div className='youtube-link'>
+                    <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel='noopener noreferrer'>
+                        Project Demo 
+                    </a>
+                </div>
 
                 {/* Project Details Grid */}
                 <div className='project-details-grid'>

@@ -1,7 +1,7 @@
 import './AboutPage.css';
 import aboutImage from '../assets/AboutMePageImg2.jpg';
 import { FaCode, FaDatabase, FaCloud, FaUsers, FaGraduationCap, FaBriefcase, FaCertificate, FaLightbulb, FaNewspaper, FaExternalLinkAlt } from 'react-icons/fa';
-
+import Resume from '../assets/AhmadBisharaResume.pdf';
 function AboutPage() {
     return (
         <div className="about-page">
@@ -132,7 +132,11 @@ function AboutPage() {
                 <h2>Let's work together</h2>
                 <p>I'm always open to discussing new opportunities, interesting projects, or potential collaborations.</p>
                 <div className="cta-buttons-about">
-                    <button className="download-resume-btn">Download Resume</button>
+                   <a href={Resume} download="Ahmad_Bishara_Resume.pdf">
+                        <button className="download-resume-btn">
+                            Download Resume
+                        </button>
+                    </a>
                     <button className="get-touch-btn-about">Get in Touch</button>
                 </div>
             </div>
