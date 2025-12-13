@@ -22,10 +22,10 @@ const Footer = () => {
 
                 {/* Right section - Social icons */}
                 <div className="footer-right-top">
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/ahmadb123" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>    
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/ahmad-bishara-1b4a20250/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </a>
                     <a href="mailto:Bishara.a@northeastern.edu">

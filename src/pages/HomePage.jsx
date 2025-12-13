@@ -1,7 +1,16 @@
 import '../App.css';
 import { FaArrowRight, FaEnvelope } from 'react-icons/fa';
-
+import { useNavigate } from 'react-router-dom';
 function HomePage() {
+  const navigate = useNavigate();
+  
+  const hanldeViewWorkClick =() => {
+    navigate('/projects');
+  }
+
+  const handleGetInTouchClick = () => {
+    navigate('/contact');
+  }
   return (
     <div className='my-portfolio'> 
       <div className='title-container'>
@@ -16,10 +25,10 @@ function HomePage() {
       </p>
 
       <div className='cta-buttons'>
-        <button className='view-work-btn'>
+        <button className='view-work-btn' onClick={hanldeViewWorkClick}>
           View my work <FaArrowRight />
         </button>
-        <button className='get-touch-btn'>
+        <button className='get-touch-btn' onClick={handleGetInTouchClick}> 
           <FaEnvelope /> Get in touch
         </button>
       </div>

@@ -1,7 +1,7 @@
 import './AboutPage.css';
 import aboutImage from '../assets/AboutMePageImg2.jpg';
 import { FaCode, FaDatabase, FaCloud, FaUsers, FaGraduationCap, FaBriefcase, FaCertificate, FaLightbulb, FaNewspaper, FaExternalLinkAlt } from 'react-icons/fa';
-import Resume from '../assets/AhmadBisharaResume.pdf';
+import Resume from '../assets/MyResume.pdf';
 function AboutPage() {
     return (
         <div className="about-page">

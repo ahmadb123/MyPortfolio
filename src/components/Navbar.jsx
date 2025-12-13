@@ -1,3 +1,4 @@
+import Resume from '../assets/MyResume.pdf';
 function Navbar() {
   return (
     <nav className="navbar">
@@ -12,7 +13,11 @@ function Navbar() {
         <li><a href="/projects">Projects</a></li>
         <li><a href="/experience">Experience</a></li>
       </ul>
-      <button className="resume-btn">Download Resume</button>
+     <a href={Resume} download="Ahmad_Bishara_Resume.pdf">
+      <button className="download-resume-btn">
+          Download Resume
+      </button>
+    </a>
     </nav>
   )
 }
