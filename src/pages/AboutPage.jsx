@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import './AboutPage.css';
 import aboutImage from '../assets/AboutMePageImg2.jpg';
-import { FaCode, FaDatabase, FaCloud, FaUsers, FaGraduationCap, FaBriefcase, FaCertificate, FaLightbulb, FaNewspaper, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaCloud, FaUsers, FaGraduationCap, FaBriefcase, FaCertificate, FaLightbulb, FaNewspaper, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Resume from '../assets/MyResume.pdf';
+
 function AboutPage() {
+    const [isExpanded, setIsExpanded] = useState(false);
+
     return (
         <div className="about-page">
             <div className="about-content">
@@ -13,19 +17,41 @@ function AboutPage() {
                 
                 <img className="about-image" src={aboutImage} alt="Workspace setup" />
                 
-                <div className="my-journey">
+                <div className={`my-journey ${isExpanded ? 'expanded' : 'collapsed'}`}>
                     <strong>My Journey</strong>
-                    I'm currently pursuing my Master's in Computer Science at Northeastern University, 
-                    building upon a strong foundation established during my undergraduate studies at Endicott College.
-                    <br /><br />
-                    With over 4 years of hands-on development experience, I've architected and delivered 
-                    full-stack applications that serve thousands of users. My work spans from creating genomic 
-                    research portals for medical professionals to building real-time multiplayer gaming platforms.
-                    <br /><br />
-                    I'm passionate about leveraging cutting-edge technologies to solve complex problems. 
-                    Whether it's optimizing API performance, designing microservices architectures, or 
-                    implementing real-time communication systems, I thrive on challenges that push the 
-                    boundaries of what's possible.
+                    <div className="journey-content">
+                        I'm currently pursuing my Master's in Computer Science at Northeastern University, 
+                        building upon a strong foundation established during my undergraduate studies at Endicott College.
+                        
+                        {isExpanded && (
+                            <>
+                                <br /><br />
+                                With over 4 years of hands-on development experience, I've architected and delivered 
+                                full-stack applications that serve thousands of users. My work spans from creating genomic 
+                                research portals for medical professionals to building real-time multiplayer gaming platforms.
+                                <br /><br />
+                                I'm passionate about leveraging cutting-edge technologies to solve complex problems. 
+                                Whether it's optimizing API performance, designing microservices architectures, or 
+                                implementing real-time communication systems, I thrive on challenges that push the 
+                                boundaries of what's possible.
+                            </>
+                        )}
+                    </div>
+                    
+                    <button 
+                        className="read-more-btn" 
+                        onClick={() => setIsExpanded(!isExpanded)}
+                    >
+                        {isExpanded ? (
+                            <>
+                                Read Less <FaChevronUp />
+                            </>
+                        ) : (
+                            <>
+                                Read More <FaChevronDown />
+                            </>
+                        )}
+                    </button>
                 </div>
             </div>
 
