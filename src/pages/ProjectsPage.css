@@ -152,35 +152,541 @@
     gap: 12px;
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 @media (max-width: 968px) {
-    .projects-listing-page {
-        padding: 100px 40px 60px;
-    }
+  .projects-page {
+    padding: 100px 40px 40px;
+  }
 
-    .projects-main-title {
-        font-size: 2.5rem;
-    }
+  .back-link {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
 
-    .project-card-image {
-        height: 280px;
-        padding: 15px;
-    }
+  .project-title {
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+  }
+
+  .project-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .tech-tags {
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .tag {
+    font-size: 0.85rem;
+    padding: 7px 18px;
+  }
+
+  /* Images */
+  .project-image-container {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .project-images-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  .gallery-image {
+    padding: 18px;
+  }
+
+  .gallery-image img {
+    max-height: 550px;
+  }
+
+  /* Details Grid */
+  .project-details-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .detail-item h4 {
+    font-size: 0.8rem;
+  }
+
+  .detail-item p {
+    font-size: 1.05rem;
+  }
+
+  /* Sections */
+  .project-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+
+  .project-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+
+  .project-section p {
+    font-size: 1rem;
+  }
+
+  .problems-list li {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  /* Features */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 40px 0;
+  }
+
+  .feature-card {
+    padding: 30px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Impact */
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 35px 0 60px;
+  }
+
+  .impact-card {
+    padding: 30px 20px;
+  }
+
+  .impact-number {
+    font-size: 2.2rem;
+  }
+
+  .impact-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .project-footer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 0 25px;
+    margin-top: 60px;
+  }
+
+  .footer-left h3 {
+    font-size: 1.6rem;
+  }
+
+  .footer-right h4 {
+    font-size: 1.2rem;
+  }
 }
 
-@media (max-width: 640px) {
-    .project-card-content {
-        padding: 25px;
-    }
+/* Large Mobile (481px - 768px) */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 80px 30px 30px;
+  }
 
-    .project-card-image {
-        height: 220px;
-        padding: 10px;
-    }
+  .back-link {
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+  }
+
+  .project-title {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+
+  .project-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+  }
+
+  .tech-tags {
+    gap: 10px;
+    margin-bottom: 35px;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+
+  /* Images */
+  .project-image-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .project-images-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .gallery-image {
+    padding: 15px;
+  }
+
+  .gallery-image img {
+    max-height: 500px;
+  }
+
+  /* Details Grid */
+  .project-details-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  .detail-item {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(94, 234, 212, 0.05);
+    border-radius: 10px;
+  }
+
+  .detail-item h4 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .detail-item p {
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  .project-section {
+    margin-bottom: 40px;
+  }
+
+  .project-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .project-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .project-section p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  /* Problems */
+  .problems-list li {
+    font-size: 0.95rem;
+    padding: 9px 0;
+    padding-left: 28px;
+  }
+
+  .problems-list li::before {
+    font-size: 1.3rem;
+    top: 6px;
+  }
+
+  .problems-box {
+    padding: 25px;
+    margin-top: 18px;
+  }
+
+  /* Features */
+  .features-grid {
+    gap: 20px;
+    margin: 35px 0;
+  }
+
+  .feature-card {
+    padding: 25px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+  }
+
+  .feature-card ul li {
+    font-size: 0.95rem;
+    padding: 9px 0;
+    padding-left: 23px;
+  }
+
+  /* Impact */
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 0 50px;
+  }
+
+  .impact-card {
+    padding: 25px 20px;
+  }
+
+  .impact-number {
+    font-size: 2rem;
+  }
+
+  .impact-card p {
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  .project-footer {
+    gap: 35px;
+    padding: 45px 0 20px;
+    margin-top: 50px;
+  }
+
+  .footer-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .footer-left p {
+    font-size: 0.95rem;
+  }
+
+  .footer-right h4 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+
+  .footer-contact p {
+    font-size: 0.95rem;
+    margin: 7px 0;
+  }
+
+  .copyright p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .projects-page {
+    padding: 70px 20px 20px;
+  }
+
+  .back-link {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    gap: 6px;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+  }
+
+  .project-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .tech-tags {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 5px 14px;
+  }
+
+  /* Images */
+  .project-image-container {
+    margin-bottom: 35px;
+    border-radius: 12px;
+  }
+
+  .project-images-gallery {
+    gap: 18px;
+    margin-bottom: 35px;
+  }
+
+  .gallery-image {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .gallery-image img {
+    max-height: 400px;
+  }
+
+  /* Details Grid */
+  .project-details-grid {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .detail-item {
+    padding: 18px;
+  }
+
+  .detail-item h4 {
+    font-size: 0.7rem;
+  }
+
+  .detail-item p {
+    font-size: 0.95rem;
+  }
+
+  /* Sections */
+  .project-section {
+    margin-bottom: 35px;
+  }
+
+  .project-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+  }
+
+  .project-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+
+  .project-section p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  /* Problems */
+  .problems-list li {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    padding-left: 25px;
+  }
+
+  .problems-list li::before {
+    font-size: 1.2rem;
+    top: 5px;
+  }
+
+  .problems-box {
+    padding: 20px;
+    margin-top: 16px;
+  }
+
+  /* Features */
+  .features-grid {
+    gap: 18px;
+    margin: 30px 0;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .feature-card ul li {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+
+  .feature-card ul li::before {
+    font-size: 0.9rem;
+  }
+
+  /* Impact */
+  .impact-card {
+    padding: 22px 18px;
+  }
+
+  .impact-number {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .impact-card p {
+    font-size: 0.8rem;
+  }
+
+  /* Footer */
+  .project-footer {
+    gap: 30px;
+    padding: 40px 0 18px;
+    margin-top: 40px;
+  }
+
+  .footer-left h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-left p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .footer-right h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+    margin: 6px 0;
+  }
+
+  .copyright {
+    padding-top: 25px;
+  }
+
+  .copyright p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .projects-page {
+    padding: 60px 18px 18px;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .project-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-section p,
+  .problems-list li,
+  .feature-card ul li {
+    font-size: 0.85rem;
+  }
+
+  .gallery-image img {
+    max-height: 350px;
+  }
+
+  .impact-number {
+    font-size: 1.6rem;
+  }
 }

@@ -244,167 +244,570 @@
     font-size: 0.9rem;
     font-weight: 500;
 }
+/* Mobile Responsive Updates for ExperiencePage.css 
+   Add these to your existing ExperiencePage.css file */
 
-/* Responsive */
+/* Tablet (768px - 968px) */
 @media (max-width: 968px) {
-    .experience-page {
-        padding: 100px 40px 60px;
-    }
+  .experience-page {
+    padding: 100px 40px 40px;
+  }
 
-    .experience-main-title {
-        font-size: 2.5rem;
-    }
+  .experience-main-title {
+    font-size: 3rem;
+  }
 
-    .experience-card {
-        padding: 30px 25px;
-    }
+  .experience-subtitle {
+    font-size: 1.1rem;
+  }
 
-    .experience-card-header {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-article-banner {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 25px;
-    }
-
-    .experience-impact {
-        grid-template-columns: 1fr;
-    }
-}
-/* Tool Showcase Section */
-.tool-showcase {
-    background-color: rgba(94, 234, 212, 0.05);
-    border: 2px solid #3d5a6c;
-    border-radius: 15px;
-    padding: 40px;
-    margin: 30px 0;
-}
-
-.tool-showcase h4 {
-    color: #5eead4;
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+  /* Featured Article Banner */
+  .featured-article-banner {
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
     text-align: center;
-}
+  }
 
-/* Main Showcase Image */
-.showcase-main-image {
-    margin-bottom: 40px;
-}
+  .banner-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
 
-.showcase-main-image img {
-    width: 100%;
-    border-radius: 10px;
-    border: 2px solid #3d5a6c;
-    margin-bottom: 15px;
-}
+  .banner-content h3 {
+    font-size: 1.3rem;
+  }
 
-.image-caption {
-    color: #a8b2d1;
+  .banner-content p {
+    font-size: 1rem;
+  }
+
+  /* Experience Cards */
+  .experience-card {
+    padding: 35px;
+  }
+
+  .experience-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+  }
+
+  .experience-date {
     font-size: 0.95rem;
-    line-height: 1.6;
-    padding: 0 10px;
+  }
+
+  .experience-description h3 {
+    font-size: 1.4rem;
+  }
+
+  .experience-description p {
+    font-size: 1rem;
+  }
+
+  /* Tool Showcase */
+  .tool-showcase h4 {
+    font-size: 1.3rem;
+  }
+
+  .showcase-features-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .feature-description h5 {
+    font-size: 1.1rem;
+  }
+
+  .feature-description p {
+    font-size: 0.95rem;
+  }
+
+  /* Impact Items */
+  .experience-impact {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .impact-number {
+    font-size: 1.8rem;
+  }
+
+  .impact-label {
+    font-size: 0.85rem;
+  }
+
+  /* Tech Tags */
+  .experience-tech {
+    gap: 10px;
+  }
+
+  .tech-tag {
+    font-size: 0.85rem;
+    padding: 7px 16px;
+  }
 }
 
-.image-caption strong {
-    color: #5eead4;
-}
+/* Large Mobile (481px - 768px) */
+@media (max-width: 768px) {
+  .experience-page {
+    padding: 80px 30px 30px;
+  }
 
-/* Feature Grid */
-.showcase-features-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  .experience-header-section {
     margin-bottom: 40px;
-}
+  }
 
-.showcase-feature {
-    background-color: #1a1a2e;
-    border: 2px solid #3d5a6c;
-    border-radius: 12px;
-    padding: 20px;
-    transition: border-color 0.3s;
-}
+  .experience-main-title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
 
-.showcase-feature:hover {
-    border-color: #5eead4;
-}
+  .experience-subtitle {
+    font-size: 1.05rem;
+  }
 
-.showcase-feature img {
+  /* Featured Article Banner */
+  .featured-article-banner {
+    padding: 25px;
+    margin-bottom: 40px;
+  }
+
+  .banner-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+  }
+
+  .banner-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .banner-content p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .banner-link {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  /* Experience Timeline */
+  .experience-timeline {
+    gap: 40px;
+  }
+
+  /* Experience Cards */
+  .experience-card {
+    padding: 30px;
+  }
+
+  .experience-card-header,
+  .experience-card-header-full {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .experience-title-group {
     width: 100%;
+  }
+
+  .experience-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .company-name {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+  }
+
+  .experience-date {
+    font-size: 0.9rem;
+  }
+
+  /* Description */
+  .experience-description {
+    margin-top: 25px;
+  }
+
+  .experience-description h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .experience-description p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  /* Tool Showcase */
+  .tool-showcase {
+    margin: 30px 0;
+    padding: 25px;
+  }
+
+  .tool-showcase h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .showcase-main-image {
+    margin-bottom: 25px;
+  }
+
+  .showcase-main-image img {
+    border-radius: 10px;
+  }
+
+  .image-caption {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .showcase-features-grid {
+    gap: 20px;
+  }
+
+  .showcase-feature {
+    padding: 20px;
+  }
+
+  .showcase-feature img {
     border-radius: 8px;
     margin-bottom: 15px;
+  }
+
+  .feature-description h5 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+
+  .feature-description p {
+    font-size: 0.9rem;
+  }
+
+  /* Demo Link */
+  .demo-link-container {
+    margin-top: 25px;
+  }
+
+  .demo-link {
+    font-size: 1rem;
+    padding: 12px 28px;
+  }
+
+  .demo-note {
+    font-size: 0.85rem;
+  }
+
+  /* Highlights */
+  .experience-highlights {
+    margin: 30px 0;
+  }
+
+  .experience-highlights h4 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+
+  .experience-highlights ul li {
+    font-size: 0.95rem;
+    padding: 9px 0;
+    padding-left: 28px;
+  }
+
+  /* Impact */
+  .experience-impact {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin: 30px 0;
+  }
+
+  .impact-item {
+    padding: 20px;
+  }
+
+  .impact-number {
+    font-size: 1.6rem;
+  }
+
+  .impact-label {
+    font-size: 0.8rem;
+  }
+
+  /* Tech Tags */
+  .experience-tech {
+    gap: 8px;
+    margin-top: 25px;
+  }
+
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
 }
 
-.feature-description h5 {
-    color: white;
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .experience-page {
+    padding: 70px 20px 20px;
+  }
+
+  .experience-header-section {
+    margin-bottom: 35px;
+  }
+
+  .experience-main-title {
+    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+
+  .highlight {
+    display: block;
+  }
+
+  .experience-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Featured Article Banner */
+  .featured-article-banner {
+    padding: 20px;
+    margin-bottom: 35px;
+  }
+
+  .banner-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+  }
+
+  .banner-content h3 {
     font-size: 1.1rem;
+    margin-bottom: 7px;
+  }
+
+  .banner-content p {
+    font-size: 0.9rem;
     margin-bottom: 10px;
-}
+  }
 
-.feature-description p {
-    color: #a8b2d1;
+  .banner-link {
     font-size: 0.9rem;
-    line-height: 1.5;
-}
+    padding: 9px 18px;
+  }
 
-/* Demo Link */
-.demo-link-container {
-    text-align: center;
-    padding: 30px;
-    background-color: #1a1a2e;
+  /* Experience Timeline */
+  .experience-timeline {
+    gap: 35px;
+  }
+
+  /* Experience Cards */
+  .experience-card {
+    padding: 25px;
     border-radius: 12px;
-    border: 2px solid #5eead4;
-}
+  }
 
-.demo-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #5eead4;
-    color: #1a1a2e;
-    text-decoration: none;
-    padding: 15px 35px;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+  .experience-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
 
-.demo-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(94, 234, 212, 0.4);
-}
+  .company-name {
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+  }
 
-.demo-note {
-    color: #a8b2d1;
+  .experience-date {
+    font-size: 0.85rem;
+  }
+
+  /* Description */
+  .experience-description {
+    margin-top: 20px;
+  }
+
+  .experience-description h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .experience-description p {
     font-size: 0.9rem;
-    margin-top: 15px;
-}
+    line-height: 1.7;
+  }
 
-/* Remove single image header for SYNGAP card */
-.experience-card-header-full {
-    margin-bottom: 30px;
-}
+  /* Tool Showcase */
+  .tool-showcase {
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 10px;
+  }
 
-.experience-card-header-full .experience-title-group {
+  .tool-showcase h4 {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+
+  .showcase-main-image {
+    margin-bottom: 20px;
+  }
+
+  .image-caption {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .image-caption strong {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .showcase-features-grid {
+    gap: 18px;
+  }
+
+  .showcase-feature {
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .showcase-feature img {
+    margin-bottom: 12px;
+  }
+
+  .feature-description h5 {
+    font-size: 1rem;
+    margin-bottom: 7px;
+  }
+
+  .feature-description p {
+    font-size: 0.85rem;
+  }
+
+  /* Demo Link */
+  .demo-link-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .demo-link {
+    font-size: 0.95rem;
+    padding: 11px 24px;
     width: 100%;
+    display: inline-block;
+  }
+
+  .demo-note {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+  /* Highlights */
+  .experience-highlights {
+    margin: 25px 0;
+  }
+
+  .experience-highlights h4 {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+  }
+
+  .experience-highlights ul {
+    margin-left: 0;
+  }
+
+  .experience-highlights ul li {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    padding-left: 25px;
+  }
+
+  .experience-highlights ul li::before {
+    font-size: 1rem;
+    top: 8px;
+  }
+
+  /* Impact */
+  .experience-impact {
+    gap: 15px;
+    margin: 25px 0;
+  }
+
+  .impact-item {
+    padding: 18px;
+  }
+
+  .impact-number {
+    font-size: 1.5rem;
+  }
+
+  .impact-label {
+    font-size: 0.75rem;
+  }
+
+  /* Tech Tags */
+  .experience-tech {
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 20px;
+  }
+
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
 }
 
-/* Responsive */
-@media (max-width: 968px) {
-    .tool-showcase {
-        padding: 25px 20px;
-    }
+/* Extra Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .experience-page {
+    padding: 60px 18px 18px;
+  }
 
-    .showcase-features-grid {
-        grid-template-columns: 1fr;
-    }
+  .experience-main-title {
+    font-size: 1.75rem;
+  }
 
-    .demo-link {
-        width: 100%;
-        justify-content: center;
-    }
+  .experience-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .experience-description h3 {
+    font-size: 1.1rem;
+  }
+
+  .experience-description p,
+  .experience-highlights ul li {
+    font-size: 0.85rem;
+  }
+
+  .tool-showcase {
+    padding: 18px;
+  }
+
+  .demo-link {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
 }

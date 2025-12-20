@@ -230,40 +230,323 @@
   font-size: 1.1rem;
 }
 
-/* Responsive */
+
 @media (max-width: 968px) {
   .contact-page {
-    padding: 100px 40px 60px;
+    padding: 100px 40px 40px;
+  }
+
+  .contact-title {
+    font-size: 3rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.1rem;
   }
 
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  /* Contact methods stack vertically on tablets */
+  .contact-methods {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 80px 30px 30px;
+  }
+
+  .contact-header {
+    margin-bottom: 40px;
   }
 
   .contact-title {
     font-size: 2.5rem;
   }
 
-  .contact-form {
-    padding: 30px 25px;
+  .contact-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .contact-container {
+    gap: 40px;
+  }
+
+  .contact-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .connect-description {
+    font-size: 1rem;
+  }
+
+  .contact-method {
+    padding: 18px;
+  }
+
+  .method-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .method-details h4 {
+    font-size: 1rem;
+  }
+
+  .method-details a,
+  .method-details p {
+    font-size: 0.95rem;
+  }
+
+  .social-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  /* Form */
+  .form-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form label {
+    font-size: 0.95rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 14px 32px;
+  }
+
+  .success-message h3 {
+    font-size: 1.3rem;
+  }
+
+  .success-message p {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 70px 20px 20px;
+  }
+
   .contact-title {
     font-size: 2rem;
   }
 
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-left h2 {
+    font-size: 1.6rem;
+  }
+
+  .connect-description {
+    font-size: 0.95rem;
+  }
+
+  .contact-method {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .method-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .social-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+
   .social-icons a {
-    font-size: 2.5rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+
+  .form-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 0.95rem;
   }
 }
-.error-message {
-  color: #ff6b6b;
-  background-color: rgba(255, 107, 107, 0.1);
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  text-align: center;
+
+
+/* ===============================================
+   PROJECTSPAGE.CSS - Mobile Responsive Updates
+   =============================================== */
+
+/* Add these rules to your ProjectsPage.css */
+
+@media (max-width: 968px) {
+  .projects-listing-page {
+    padding: 100px 40px 40px;
+  }
+
+  .projects-main-title {
+    font-size: 3rem;
+  }
+
+  .projects-main-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card-image {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-listing-page {
+    padding: 80px 30px 30px;
+  }
+
+  .projects-header {
+    margin-bottom: 40px;
+  }
+
+  .projects-main-title {
+    font-size: 2.5rem;
+  }
+
+  .projects-main-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .projects-grid {
+    gap: 35px;
+  }
+
+  .project-card-image {
+    height: 250px;
+  }
+
+  .featured-badge {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+  }
+
+  .project-card-content {
+    padding: 25px;
+  }
+
+  .project-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+
+  .project-card-tags {
+    gap: 8px;
+    margin: 15px 0;
+  }
+
+  .project-tag {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+
+  .view-project-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-listing-page {
+    padding: 70px 20px 20px;
+  }
+
+  .projects-main-title {
+    font-size: 2rem;
+  }
+
+  .projects-main-subtitle {
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    gap: 30px;
+  }
+
+  .project-card-image {
+    height: 200px;
+  }
+
+  .project-card-content {
+    padding: 20px;
+  }
+
+  .project-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+
+  .project-tag {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+
+  .view-project-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .projects-main-title {
+    font-size: 1.75rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.3rem;
+  }
 }
