@@ -13,8 +13,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <span className="logo-a">A</span>
-        <span className="logo-b">B</span>
+        <span className="logo-a">Ahmad </span>
+        <span className="logo-b">Bishara</span>
       </div>
 
       {/* Mobile menu toggle */}
