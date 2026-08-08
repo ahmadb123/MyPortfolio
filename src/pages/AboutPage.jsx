@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './AboutPage.css';
 import aboutImage from '../assets/AboutMePageImg2.jpg';
 import { FaCode, FaDatabase, FaCloud, FaUsers, FaGraduationCap, FaBriefcase, FaCertificate, FaLightbulb, FaNewspaper, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
@@ -12,7 +13,7 @@ function AboutPage() {
             <div className="about-content">
                 <h1 className="about-title">About</h1>
                 <p className="about-text">
-                    Passionate software engineer building scalable solutions that make a difference
+                    Engineer, builder, and occasional bioinformatician. I ship products that get used.
                 </p>
                 
                 <img className="about-image" src={aboutImage} alt="Workspace setup" />
@@ -20,20 +21,22 @@ function AboutPage() {
                 <div className={`my-journey ${isExpanded ? 'expanded' : 'collapsed'}`}>
                     <strong>My Journey</strong>
                     <div className="journey-content">
-                        I'm currently pursuing my Master's in Computer Science at Northeastern University, 
-                        building upon a strong foundation established during my undergraduate studies at Endicott College.
-                        
+                        I'm pursuing my M.S. in Computer Science at Northeastern University's Khoury College,
+                        building on a B.S. from Endicott College (2025, GPA 3.5).
+
                         {isExpanded && (
                             <>
                                 <br /><br />
-                                With over 4 years of hands-on development experience, I've architected and delivered 
-                                full-stack applications that serve thousands of users. My work spans from creating genomic 
-                                research portals for medical professionals to building real-time multiplayer gaming platforms.
+                                I've shipped across three domains: a genomic analytics tool for SynGAP Research
+                                Fund (now the primary interface researchers use, covered by Endicott College News);
+                                an embedded pediatric respiratory monitor built on ESP32-S3 with real-time C++
+                                firmware; and a cross-platform gaming identity backend integrating four OAuth2
+                                providers and WebSocket messaging at sub-100ms latency.
                                 <br /><br />
-                                I'm passionate about leveraging cutting-edge technologies to solve complex problems. 
-                                Whether it's optimizing API performance, designing microservices architectures, or 
-                                implementing real-time communication systems, I thrive on challenges that push the 
-                                boundaries of what's possible.
+                                My interest is in problems where good software makes real-world differences —
+                                in medicine, in accessibility, in the small daily interactions people don't
+                                realize are broken until someone fixes them. Currently deciding whether that
+                                means founding a company or joining an early-stage team.
                             </>
                         )}
                     </div>
@@ -84,8 +87,8 @@ function AboutPage() {
                     <FaGraduationCap className="timeline-icon" />
                     <div className="timeline-content">
                         <h3>Education</h3>
-                        <p className="timeline-title">Master of Science, Northeastern University (2027)</p>
-                        <p className="timeline-subtitle">BS Computer Science, Endicott College (2021 - Class of 2025)</p>
+                        <p className="timeline-title">M.S. Computer Science, Northeastern University — Expected May 2028</p>
+                        <p className="timeline-subtitle">B.S. Computer Science, Endicott College — 2025 (GPA 3.5)</p>
                     </div>
                 </div>
 
@@ -93,8 +96,8 @@ function AboutPage() {
                     <FaBriefcase className="timeline-icon" />
                     <div className="timeline-content">
                         <h3>Experience</h3>
-                        <p className="timeline-title">3+ years in Full-Stack Development</p>
-                        <p className="timeline-subtitle">Full-Stack Development Intern at SynGAP Research Fund</p>
+                        <p className="timeline-title">Recent: SynGAP Research Fund (Bioinformatics & SWE Intern)</p>
+                        <p className="timeline-subtitle">Prior: Endicott Cybersecurity Lab · Female Fan Nation (Contract)</p>
                     </div>
                 </div>
             </div>
@@ -104,7 +107,7 @@ function AboutPage() {
                 <div className="skill-card">
                     <FaCode className="skill-icon" />
                     <h3>Full-Stack Development</h3>
-                    <p>Expert in Java, Spring Boot, React, and modern web technologies</p>
+                    <p>Proficient in Java, Spring Boot, React, and modern web technologies</p>
                 </div>
 
                 <div className="skill-card">
@@ -163,7 +166,9 @@ function AboutPage() {
                             Download Resume
                         </button>
                     </a>
-                    <button className="get-touch-btn-about">Get in Touch</button>
+                    <Link to="/contact">
+                        <button className="get-touch-btn-about">Get in Touch</button>
+                    </Link>
                 </div>
             </div>
         </div>

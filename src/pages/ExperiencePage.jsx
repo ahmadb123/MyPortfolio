@@ -44,9 +44,9 @@ function ExperiencePage() {
                     <div className="experience-card">
                         <div className="experience-card-header-full">
                             <div className="experience-title-group">
-                                <h2>Full-Stack Developer</h2>
+                                <h2>Bioinformatics & Software Development Intern</h2>
                                 <p className="company-name">SynGAP Research Fund</p>
-                                <p className="experience-date">2024 - 2025 • Los Angeles</p>
+                                <p className="experience-date">Sep 2024 – Jan 2025 • Remote</p>
                             </div>
                         </div>
                         
@@ -133,12 +133,12 @@ function ExperiencePage() {
                         </div>
 
                         <div className="experience-tech">
-                            <span className="tech-tag">React</span>
-                            <span className="tech-tag">D3.js</span>
-                            <span className="tech-tag">JavaScript</span>
-                            <span className="tech-tag">Shiny</span>
+                            <span className="tech-tag">Python</span>
+                            <span className="tech-tag">Pandas</span>
+                            <span className="tech-tag">R / Shiny</span>
+                            <span className="tech-tag">Flask</span>
+                            <span className="tech-tag">Plotly</span>
                             <span className="tech-tag">Data Visualization</span>
-                            <span className="tech-tag">Healthcare Tech</span>
                         </div>
                     </div>
 
@@ -146,34 +146,33 @@ function ExperiencePage() {
                     <div className="experience-card">
                         <div className="experience-card-header">
                             <div className="experience-title-group">
-                                <h2>Front-End Development Intern</h2>
+                                <h2>Software Engineer (Contract)</h2>
                                 <p className="company-name">Female Fan Nation</p>
-                                <p className="experience-date">2022 • Remote</p>
+                                <p className="experience-date">Sep 2022 – Dec 2022 • Remote</p>
                             </div>
                         </div>
-                        
+
                         <div className="experience-description">
                             <p>
-                                Contributed to the development of a social platform for female sports fans, 
-                                implementing responsive UI components and improving user engagement features.
+                                Refactored the React frontend and REST APIs for a social platform, focusing on
+                                mobile conversion and checkout performance for a growing consumer user base.
                             </p>
                         </div>
 
                         <div className="experience-highlights">
                             <h4>Key Achievements</h4>
                             <ul>
-                                <li>Developed responsive React components for improved mobile experience</li>
-                                <li>Implemented user authentication and profile management features</li>
-                                <li>Enhanced UI/UX based on user feedback and analytics</li>
-                                <li>Collaborated with backend team to integrate RESTful APIs</li>
+                                <li>Refactored React frontend and REST APIs — increased mobile conversion by 15%</li>
+                                <li>Scaled traffic to 50K+ monthly users</li>
+                                <li>Implemented real-time inventory APIs, reducing cart abandonment by 12%</li>
                             </ul>
                         </div>
 
                         <div className="experience-tech">
                             <span className="tech-tag">React</span>
                             <span className="tech-tag">JavaScript</span>
-                            <span className="tech-tag">CSS</span>
                             <span className="tech-tag">REST APIs</span>
+                            <span className="tech-tag">Node.js</span>
                         </div>
                     </div>
 
@@ -181,34 +180,35 @@ function ExperiencePage() {
                     <div className="experience-card">
                         <div className="experience-card-header">
                             <div className="experience-title-group">
-                                <h2>Cybersecurity Researcher</h2>
+                                <h2>Research Assistant</h2>
                                 <p className="company-name">Endicott College Cybersecurity Lab</p>
-                                <p className="experience-date">2021 - 2022 • Beverly, MA</p>
+                                <p className="experience-date">May 2023 – Aug 2023 • Beverly, MA</p>
                             </div>
                         </div>
-                        
+
                         <div className="experience-description">
                             <p>
-                                Conducted research on network security vulnerabilities and assisted in developing 
-                                security protocols for educational institutions.
+                                Led end-to-end design of six modular cybersecurity labs adopted by 200+ students
+                                across three courses. Automated AWS lab infrastructure with Terraform and Docker,
+                                reducing setup time by 70%.
                             </p>
                         </div>
 
                         <div className="experience-highlights">
                             <h4>Key Achievements</h4>
                             <ul>
-                                <li>Analyzed network traffic patterns to identify security vulnerabilities</li>
-                                <li>Developed Python scripts for automated security testing</li>
-                                <li>Documented security best practices for educational environments</li>
-                                <li>Presented research findings to faculty and administration</li>
+                                <li>Owned end-to-end design of 6 modular cybersecurity labs used by 200+ students</li>
+                                <li>Automated AWS lab infrastructure with Terraform + Docker (70% setup-time reduction)</li>
+                                <li>Documented lab architecture for both technical and non-technical stakeholders</li>
                             </ul>
                         </div>
 
                         <div className="experience-tech">
-                            <span className="tech-tag">Network Security</span>
-                            <span className="tech-tag">Python</span>
-                            <span className="tech-tag">Research</span>
-                            <span className="tech-tag">Penetration Testing</span>
+                            <span className="tech-tag">AWS</span>
+                            <span className="tech-tag">Terraform</span>
+                            <span className="tech-tag">Docker</span>
+                            <span className="tech-tag">Linux</span>
+                            <span className="tech-tag">Curriculum Design</span>
                         </div>
                     </div>
                 </div>

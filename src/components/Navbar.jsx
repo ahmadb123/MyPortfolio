@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Resume from '../assets/MyResume.pdf';
 import './Navbar.css';
@@ -28,11 +29,11 @@ function Navbar() {
 
       {/* Navigation links */}
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <li><a href="/" onClick={closeMenu}>Home</a></li>
-        <li><a href="/about" onClick={closeMenu}>About</a></li>
-        <li><a href="/contact" onClick={closeMenu}>Contact</a></li>
-        <li><a href="/projects" onClick={closeMenu}>Projects</a></li>
-        <li><a href="/experience" onClick={closeMenu}>Experience</a></li>
+        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+        <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+        <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
+        <li><Link to="/experience" onClick={closeMenu}>Experience</Link></li>
       </ul>
 
       <a href={Resume} download="Ahmad_Bishara_Resume.pdf" className="resume-link">

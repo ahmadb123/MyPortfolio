@@ -3,12 +3,31 @@ import './ProjectsPage.css';
 import { Link } from 'react-router-dom';
 import gamerhubImage from '../assets/GamerHubImg.png';
 import calmmindImage from '../assets/CalmmindImg.png';
-// import syngapImage from '../assets/syngap_screenshot.png';
+import syngapImage from '../assets/Syngap1Img1.png';
+import breathingBuddyImage from '../assets/BreathingBuddyDevice.jpg';
 
 function ProjectsPage() {
     const projects = [
         {
+            id: 0,
+            title: "SYNGAP1 Mutation Viewer",
+            description: "Deployed as SynGAP Research Fund's primary rare-disease analytics tool. Featured in Endicott College News.",
+            image: syngapImage,
+            tags: ["Python", "Pandas", "Flask", "Plotly", "R / Shiny"],
+            link: "/projects/syngap1",
+            featured: true
+        },
+        {
             id: 1,
+            title: "Breathing Buddy — Inhale Monitor",
+            description: "Embedded pediatric inhaler-technique device on ESP32-S3, with C++ firmware, animated LCD feedback, and a 3-strikes emergency alert.",
+            image: breathingBuddyImage,
+            tags: ["C++", "ESP32-S3", "Arduino", "Embedded", "I2C"],
+            link: "/projects/inhale-monitor",
+            featured: true
+        },
+        {
+            id: 2,
             title: "GamerHub",
             description: "Social gaming platform connecting players across Xbox, PlayStation, and Steam",
             image: gamerhubImage,
@@ -17,11 +36,11 @@ function ProjectsPage() {
             featured: true
         },
         {
-            id: 2,
+            id: 3,
             title: "CalmMind",
             description: "Mental health application providing personalized support based on attachment theory",
             image: calmmindImage,
-            tags: ["React Native", "Spring Boot", "OpenAI API", "MySQL"],
+            tags: ["React Native", "Spring Boot", "OpenAI API", "MySQL", "JWT"],
             link: "/projects/calmmind",
             featured: true
         },

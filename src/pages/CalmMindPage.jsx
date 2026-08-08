@@ -27,7 +27,7 @@ function CalmMindPage() {
                     <span className='tag'>Spring Boot</span>
                     <span className='tag'>OpenAI API</span>
                     <span className='tag'>MySQL</span>
-                    <span className='tag'>AWS</span>
+                    <span className='tag'>JWT</span>
                 </div>
 
                 {/* Project Images Gallery */}
@@ -147,19 +147,19 @@ function CalmMindPage() {
                 <div className='impact-grid'>
                     <div className='impact-card'>
                         <h3 className='impact-number'>ECR-R</h3>
-                        <p>Validated questionnaire</p>
+                        <p>Research-validated attachment scoring</p>
                     </div>
                     <div className='impact-card'>
-                        <h3 className='impact-number'>&lt;100%</h3>
-                        <p>Secure data handling</p>
+                        <h3 className='impact-number'>&lt;2s</h3>
+                        <p>OpenAI response latency</p>
                     </div>
                     <div className='impact-card'>
                         <h3 className='impact-number'>4</h3>
-                        <p>Attachment styles</p>
+                        <p>Attachment styles supported</p>
                     </div>
                     <div className='impact-card'>
-                        <h3 className='impact-number'>OAuth2</h3>
-                        <p>Enterprise security</p>
+                        <h3 className='impact-number'>iOS + Android</h3>
+                        <p>Cross-platform React Native</p>
                     </div>
                 </div>
 
@@ -180,7 +180,7 @@ function CalmMindPage() {
                 </div>
 
                 <div className='copyright'>
-                    <p>© 2025 Ahmad Bishara. Built with React, TypeScript, and Tailwind CSS.</p>
+                    <p>© 2025 Ahmad Bishara. Built with React and CSS.</p>
                 </div>
             </div>
         </div>

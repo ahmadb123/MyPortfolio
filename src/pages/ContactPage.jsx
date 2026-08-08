@@ -26,17 +26,16 @@ function ContactPage() {
         setSending(true);
         setError('');
         
-        // EmailJS configuration - REPLACE THESE VALUES
         emailjs.send(
-            'service_ii763ie',              
-            'template_ovw58e7',             // Replace with your Template ID from EmailJS
+            'service_ii763ie',
+            'template_ovw58e7',
             {
                 from_name: formData.name,
                 from_email: formData.email,
                 subject: formData.subject,
                 message: formData.message,
             },
-            'GhQ0JwPnDn0WBlm_V'               // Replace with your Public Key from EmailJS
+            'GhQ0JwPnDn0WBlm_V'
         )
         .then(() => {
             setSending(false);
@@ -68,8 +67,9 @@ function ContactPage() {
                 <div className="contact-left">
                     <h2>Let's connect</h2>
                     <p className="connect-description">
-                        I'm currently open to freelance opportunities, full-time positions, 
-                        and interesting collaborations. Feel free to reach out through any of these channels.
+                        I'm currently looking for Summer 2026 SWE co-ops and open to conversations
+                        about early-stage companies solving problems in healthcare, developer tooling,
+                        or consumer social. Reach out through any channel below.
                     </p>
 
                     <div className="contact-methods">

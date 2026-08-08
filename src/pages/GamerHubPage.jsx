@@ -33,8 +33,8 @@ function GamerHubPage() {
                     <img src={gamerhubImage} alt="GamerHub Screenshot" className='project-image'/>
                 </div>
                 <div className='youtube-link'>
-                    <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel='noopener noreferrer'>
-                        Project Demo 
+                    <a href='https://www.youtube.com/watch?v=vuZ6CHAsEKA' target='_blank' rel='noopener noreferrer'>
+                        Project Demo
                     </a>
                 </div>
 
@@ -106,7 +106,7 @@ function GamerHubPage() {
                             <li>Microservices with Spring Boot and Spring Cloud</li>
                             <li>OAuth2 integration with multiple gaming platforms</li>
                             <li>MySQL database with Redis caching</li>
-                            <li>AWS deployment with auto-scaling</li>
+                            <li>AWS deployment (EC2, S3, RDS)</li>
                         </ul>
                     </div>
 

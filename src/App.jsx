@@ -3,6 +3,8 @@ import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';  // This is now the listing page
 import GamerHubPage from './pages/GamerHubPage';  // Individual project
 import CalmMindPage from './pages/CalmMindPage';  // Individual project
+import SyngapPage from './pages/SyngapPage';      // Individual project
+import InhaleMonitorPage from './pages/InhaleMonitorPage';  // Individual project
 import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ContactPage from './pages/ContactPage';
@@ -20,6 +22,8 @@ function App() {
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/projects/gamerhub" element={<GamerHubPage />} />
         <Route path="/projects/calmmind" element={<CalmMindPage />} />
+        <Route path="/projects/syngap1" element={<SyngapPage />} />
+        <Route path="/projects/inhale-monitor" element={<InhaleMonitorPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
