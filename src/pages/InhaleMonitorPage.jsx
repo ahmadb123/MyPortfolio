@@ -39,7 +39,7 @@ function InhaleMonitorPage() {
 
                 {/* External Link */}
                 <div className='youtube-link'>
-                    <a href='https://github.com/ahmadb123/pressure-monitor'
+                    <a href='https://github.com/ahmadb123/Arduino_Project'
                        target='_blank' rel='noopener noreferrer'>
                         <FaGithub /> View Source on GitHub <FaExternalLinkAlt />
                     </a>
